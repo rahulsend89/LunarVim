@@ -7,10 +7,12 @@ a global executable or a path to
 an executable
 ]]
 
+
 -- general
 O.auto_complete = true
 O.colorscheme = 'lunar'
-O.auto_close_tree = 0
+-- O.colorscheme = 'solarized'
+O.auto_close_tree = 1
 O.wrap_lines = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
@@ -22,6 +24,7 @@ O.treesitter.highlight.enabled = true
 O.clang.diagnostics.virtual_text = false
 O.clang.diagnostics.signs = false
 O.clang.diagnostics.underline = false
+
 
 -- python
 -- add things like O.python.formatter.yapf.exec_path
@@ -43,10 +46,10 @@ O.lua.autoformat = false
 
 -- javascript
 O.tsserver.formatter = 'prettier'
-O.tsserver.linter = nil
+O.tsserver.linter = 'eslint'
 O.tsserver.autoformat = true
 
 -- json
-O.json.autoformat = true
+O.json.autoformat = false
 
 -- create custom autocommand field (This would be easy with lua)

@@ -5,7 +5,8 @@ O = {
     hidden_files = true,
     wrap_lines = false,
     number = true,
-    relative_number = true,
+    relative_number = false,
+  	updatetime = 10,
     shell = 'bash',
 
     -- @usage pass a table with your desired languages
@@ -43,10 +44,10 @@ O = {
     },
     tsserver = {
         -- @usage can be 'eslint'
-        linter = '',
+        linter = 'eslint',
         -- @usage can be 'prettier'
         formatter = '',
-        autoformat = false,
+        autoformat = true,
         diagnostics = {virtual_text = true, signs = true, underline = true}
     },
     json = {

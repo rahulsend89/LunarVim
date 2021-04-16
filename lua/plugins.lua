@@ -72,6 +72,7 @@ return require("packer").startup(
 
         -- Color
         use {"christianchiarulli/nvcode-color-schemes.vim", opt = true}
+        use {"ishan9299/nvim-solarized-lua", opt = true}
 
         -- Icons
         use {"kyazdani42/nvim-web-devicons", opt = true}
@@ -79,6 +80,9 @@ return require("packer").startup(
         -- Status Line and Bufferline
         use {"glepnir/galaxyline.nvim", opt = true}
         use {"romgrk/barbar.nvim", opt = true}
+        use {"christoomey/vim-tmux-navigator", opt = true}
+        use {"tmux-plugins/vim-tmux", opt = true}
+        use {"tmux-plugins/vim-tmux-focus-events", opt = true}
 
         require_plugin("nvim-lspconfig")
         require_plugin("lspsaga.nvim")
@@ -102,5 +106,9 @@ return require("packer").startup(
         require_plugin("nvim-web-devicons")
         require_plugin("galaxyline.nvim")
         require_plugin("barbar.nvim")
+				require_plugin("vim-tmux-navigator")
+				require_plugin("vim-tmux-focus-events")
+				require_plugin("vim-tmux")
+				require_plugin("nvim-solarized-lua")
     end
 )

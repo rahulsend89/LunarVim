@@ -43,6 +43,7 @@ local tree_cb = require'nvim-tree.config'.nvim_tree_callback
       ["<Tab>"]          = tree_cb("preview"),
       ["I"]              = tree_cb("toggle_ignored"),
       ["H"]              = tree_cb("toggle_dotfiles"),
+      ["."]              = tree_cb("toggle_dotfiles"),
       ["R"]              = tree_cb("refresh"),
       ["a"]              = tree_cb("create"),
       ["d"]              = tree_cb("remove"),
