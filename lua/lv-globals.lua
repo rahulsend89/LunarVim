@@ -4,7 +4,7 @@ O = {
     colorscheme = 'lunar',
     hidden_files = true,
     wrap_lines = false,
-    number = true,
+    number = false,
     relative_number = false,
   	updatetime = 10,
     shell = 'bash',
@@ -47,8 +47,8 @@ O = {
         linter = 'eslint',
         -- @usage can be 'prettier'
         formatter = '',
-        autoformat = true,
-        diagnostics = {virtual_text = true, signs = true, underline = true}
+        autoformat = false,
+        diagnostics = {virtual_text = false, signs = false, underline = false}
     },
     json = {
         -- @usage can be 'prettier'

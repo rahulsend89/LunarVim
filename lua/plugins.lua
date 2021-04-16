@@ -64,6 +64,8 @@ return require("packer").startup(
 
         -- use {'lukas-reineke/indent-blankline.nvim', opt=true, branch = 'lua'}
         use {"lewis6991/gitsigns.nvim", opt = true}
+        use 'tpope/vim-fugitive'
+        use 'tpope/vim-rhubarb'
         use {"liuchengxu/vim-which-key", opt = true}
         use {"ChristianChiarulli/dashboard-nvim", opt = true}
         use {"windwp/nvim-autopairs", opt = true}
@@ -80,9 +82,10 @@ return require("packer").startup(
         -- Status Line and Bufferline
         use {"glepnir/galaxyline.nvim", opt = true}
         use {"romgrk/barbar.nvim", opt = true}
-        use {"christoomey/vim-tmux-navigator", opt = true}
-        use {"tmux-plugins/vim-tmux", opt = true}
-        use {"tmux-plugins/vim-tmux-focus-events", opt = true}
+        use 'christoomey/vim-tmux-navigator'
+
+        -- use {"tmux-plugins/vim-tmux", opt = true}
+        -- use {"tmux-plugins/vim-tmux-focus-events", opt = true}
 
         require_plugin("nvim-lspconfig")
         require_plugin("lspsaga.nvim")
@@ -106,9 +109,6 @@ return require("packer").startup(
         require_plugin("nvim-web-devicons")
         require_plugin("galaxyline.nvim")
         require_plugin("barbar.nvim")
-				require_plugin("vim-tmux-navigator")
-				require_plugin("vim-tmux-focus-events")
-				require_plugin("vim-tmux")
 				require_plugin("nvim-solarized-lua")
     end
 )
